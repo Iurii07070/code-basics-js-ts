@@ -230,3 +230,29 @@ const multiplyNumbersFromRange = (start, finish) => {
 // END
 
 export default multiplyNumbersFromRange;
+
+While loop 63/72
+JavaScript: While loop
+
+Instructions
+Edit the printNumbers() function so that it prints the numbers in reverse order. To do this, go from the upper bound to the lower bound. In other words, you should initialize the counter with the maximum value, and in the loop body, you should iterate it backwards down to the lower limit.
+
+// @ts-check
+/* eslint operator-assignment: 0 */
+
+const printNumbers = (initialNumber) => {
+  // BEGIN
+  let i = initialNumber;
+  while (i >= 1) {
+    console.log(i);
+    i = i - 1;
+  }
+  console.log('finished!');
+  // END
+};
+
+export default printNumbers;
+
+
+Loops
+Any code can be repeated thousands, millions, or even billions of times. This offers up a lot of possibilities for building programs and sophisticated systems when combined with the other tools you already know – variables and conditions. Here's an obvious example. In a 500-page book, you must locate a specific phrase. The phrase is fresh in your mind, but you can't recall the page number. The quickest (and most time-consuming) method is to go through each page until you find the right one. Loops are required for such repetitive activities.
