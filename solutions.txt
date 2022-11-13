@@ -3,7 +3,29 @@ Solutions from last to first:
 
 For loop 72/72
 JavaScript: For loop
+Instructions
+Samwell discovered that his messages were being intercepted at Castle Gemini and being read there. This made his attacks no longer a surprise. After some thought, he developed a program to encrypt the messages according to the following algorithm. It would take the text and rearrange it every two consecutive characters.
 
+encrypt('move'); // 'omev'
+encrypt('attack'); // 'taatkc'
+// If the number of characters is odd
+// the last character remains unchanged
+encrypt('go!'); // 'og!'
+
+
+// BEGIN
+const encrypt = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length; i += 2) {
+    const nextSymbol = str[i + 1] || '';
+    result = `${result}${nextSymbol}${str[i]}`;
+  }
+
+  return result;
+};
+// END
+
+export default encrypt;
 
 
 
